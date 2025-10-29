@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fi">
+<link rel="stylesheet" href="1.css">
+<link rel="script" href="1.js">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 1</title>
+    <style>
+        body {
+            background-color: orange;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        input,
+        button {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        #tulos {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tehtävä 1</h1>
+    <p>Tee ohjelma, joka pyytää käyttäjältä parillista lukua ja tulostaa tämän jälkeen kaikki parilliset luvut siihen asti poislukien 0:n</p>
+
+    <label for="luku">Anna parillinen luku:</label><br>
+    <input type="number" id="luku" min="2" step="2"><br>
+    <button onclick="tulostaParilliset()">Tulosta parilliset</button>
+
+    <div id="tulos"></div>
+
+</body>
+
+</html>
