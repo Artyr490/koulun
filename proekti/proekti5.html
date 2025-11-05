@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="proekti5.css">
+ <script src="proekti5.js" defer></script>
+</head>
+<body onload="luoTaulukko()">
+    <div id ="pelialue"></div>
+    <fieldset>
+        <label for=>Anna korkeus ja leveys"</label>    </fieldset>
+        <input type ="number" max="6" min="1" id="korkeus"/>
+        <input type ="number" max="6" min="1" id="leveys"/>
+        <button onclick="suuruus()">Luo</button>
+        <button onclick="resetoi()">Reset</button>
+        <p id="arvaukset" style="margin: 0 ; display:inline; float: right;">Aika: 00:00:00</p>
+        <br>
+        <tr> id="Rivi 1 
+            <td>
+                <img src="kuvat/1.png" id="kuva00" alt="" onclick="käännäKortti(0,0)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva01" alt="" onclick="käännäKortti(0,1)"/>    
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva02" alt="" onclick="käännäKortti(0,2)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva03" alt="" onclick="käännäKortti(0,3)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva04" alt="" onclick="käännäKortti(0,4)"/>
+            </id
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva05" alt="" onclick="käännäKortti(0,5)"/>
+            </td>
+        </tr>
+        <tr id="Rivi 2">
+            <td>
+                <img src="kuvat/1.png" id="kuva10" alt="" onclick="käännäKortti(1,0)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva11" alt="" onclick="käännäKortti(1,1)"/>    
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva12" alt="" onclick="käännäKortti(1,2)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva13" alt="" onclick="käännäKortti(1,3)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva14" alt="" onclick="käännäKortti(1,4)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png"idt="kuva15" alt="" onclick="käännäKortti(1,5)"/>
+            </td>
+        </tr>
+        <tr id="Rivi 3">
+            <td>
+                <img src="kuvat/1.png" id="kuva20" alt="" onclick="käännäKortti(2,0)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva21" alt="" onclick="käännäKortti(2,1)"/>    
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva22" alt="" onclick="käännäKortti(2,2)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva23" alt="" onclick="käännäKortti(2,3)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva24" alt="" onclick="käännäKortti(2,4)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva25" alt="" onclick="käännäKortti(2,5)"/>
+            </td>
+        </tr>
+        <tr id="Rivi 4">
+            <td>
+                <img src="kuvat/1.png" id="kuva30" alt="" onclick="käännäKortti(3,0)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva31" alt="" onclick="käännäKortti(3,1)"/>    
+            </td>
+            <td>        
+                <img src="kuvat/1.png" id="kuva32" alt="" onclick="käännäKortti(3,2)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva33" alt="" onclick="käännäKortti(3,3)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva34" alt="" onclick="käännäKortti(3,4)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva35" alt="" onclick="käännäKortti(3,5)"/>
+            </td>
+        </tr>
+        <tr id="Rivi 5">
+            <td>
+                <img src="kuvat/1.png" id="kuva40" alt="" onclick="käännäKortti(4,0)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva41" alt="" onclick="käännäKortti(4,1)"/>    
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva42" alt="" onclick="käännäKortti(4,2)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva43" alt="" onclick="käännäKortti(4,3)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva44" alt="" onclick="käännäKortti(4,4)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva45" alt="" onclick="käännäKortti(4,5)"/>
+            </td>
+        </tr>
+        <tr id="Rivi 6">
+            <td>
+                <img src="kuvat/1.png" id="kuva50" alt="" onclick="käännäKortti(5,0)"/>
+            </td>
+            <td>    
+                <img src="kuvat/1.png" id="kuva51" alt="" onclick="käännäKortti(5,1)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva52" alt=""  onclick="käännäKortti(5,2)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva53" alt="" onclick="käännäKortti(5,3)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva54" alt="" onclick="käännäKortti(5,4)"/>
+            </td>
+            <td>
+                <img src="kuvat/1.png" id="kuva55" alt="" onclick="käännäKortti(5,5)"/>
+            </td>
+        </tr>   
+   </fieldset>
+
+</body>
+</html>

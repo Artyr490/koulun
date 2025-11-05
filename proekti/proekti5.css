@@ -1,0 +1,43 @@
+td {
+    background-color: #6d8ce1;
+    height: 215px;
+    width: 215px;
+    text-align: center;
+    font-size: 72px;
+    background-image: url();
+    background-size: 215px 215px;
+}
+img {
+    height: 215px;
+    margin-bottom: -20px;
+}
+body {
+  margin: 0 auto;
+  width: 700px;
+  padding: 10px;
+  background-image: linear-gradient(to left, rgb(34, 207, 173), gold);
+}
+fieldset {
+  text-align: center;
+  background-color: lightblue;
+  min-height: 500px;
+}
+header {
+  height: 40px;
+  background: #007ba4;
+  width: 700px;
+  text-align: center;
+}
+nav li {
+  float: left;
+  list-style-type: none;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-left: 150px;
+  color: #007ba4;
+  height: 20px;
+}
+nav a {
+  color: white;
+  height: 20px;
+}
