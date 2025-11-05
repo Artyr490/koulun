@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.kortti {
+    background-color: #adb7ef;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #6a5acd;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #483d8b;
+}
+
+#tuloste {
+    margin-top: 20px;
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 5px;
+}
