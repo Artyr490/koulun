@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Eläinkuvakirja lapsille</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #fff8f0;
+      text-align: center;
+    }
+    h1 {
+      color: #444;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .animal {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .animal img {
+      width: 150px;
+      height: 150px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    .label {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>🐾 Eläinkuvakirja lapsille 🐾</h1>
+
+  <div class="grid">
+    <div class="animal">
+      <img src="kuvat/kissa.png" onclick="playSound('aanet/kissa.mp3')" alt="Kissa">
+      <div class="label">Kissa</div>
+    </div>
+    <div class="animal">
+      <img src="kuvat/koira.png" onclick="playSound('aanet/koira.mp3')" alt="Koira">
+      <div class="label">Koira</div>
+    </div>
+    <div class="animal">
+      <img src="kuvat/lehma.png" onclick="playSound('aanet/lehma.mp3')" alt="Lehmä">
+      <div class="label">Lehmä</div>
+    </div>
+    <div class="animal">
+      <img src="kuvat/hevonen.png" onclick="playSound('aanet/hevonen.mp3')" alt="Hevonen">
+      <div class="label">Hevonen</div>
+    </div>
+     <div class="animal">
+      <img src="kuvat/lammas.png" onclick="playSound('aanet/lammas.mp3')" alt="Lammas">
+      <div class="label">Lammas</div>
+    </div>
+  </div>
+
+  <audio id="player"></audio>
+
+  <script>
+    function playSound(src) {
+      const player = document.getElementById("player");
+      player.src = src;
+      player.play();
+    }
+  </script>
+</body>
+</html>
