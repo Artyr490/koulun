@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nimipäivä</title>
+  <link rel="stylesheet" href="9.css">
+  <script src="9.js" defer></script>
+</head>
+<body>
+  <h1> Nimipäivät tänään, huomenna ja eilen</h1>
+
+  <label for="country">Maa:</label>
+  <select id="country" onchange="updateAll()">
+    <option value="fi">Suomi</option>
+    <option value="ua">Ukraina</option>
+    <option value="se">Saksa</option>
+    <option value="es">Viro</option>
+  </select>
+
+  <section>
+    <h2>Tänään:</h2>
+    <ul id="today-names"></ul>
+
+    <h2>Huomenna:</h2>
+    <ul id="tomorrow-names"></ul>
+
+    <h2>Eilen:</h2>
+    <ul id="yesterday-names"></ul>
+  </section>
+
+  <section>
+    <h2>Haku päivämäärän mukaan</h2>
+    <input type="date" id="date-input">
+    <button onclick="searchByDate()">Näytä nimipäivät</button>
+    <ul id="date-results"></ul>
+  </section>
+
+  <section>
+    <h2> Haku nimen mukaan</h2>
+    <input type="text" id="name-input" placeholder="Laita nimesi ....">
+    <button onclick="searchByName()">Etsi syntymäpäivä</button>
+    <p id="name-result"></p>
+  </section>
+</body>
+</html>
+    
