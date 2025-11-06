@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 220px;
+    min-height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+}
+
+.task-list {
+    min-height: 200px;
+    margin-top: 10px;
+}
+
+.task {
+    background-color: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: grab;
+    box-shadow: 0 0 3px gray;
+}
+
+.pink {
+    background-color: #f5c2e7;
+}
+
+.orange {
+    background-color: #fcd29f;
+}
+
+.blue {
+    background-color: #b5d4f5;
+}
+
+.green {
+    background-color: #b0f2b6;
+}

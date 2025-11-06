@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekti 8</title>
+    <link rel="stylesheet" href="projekti_8.css">
+</head>
+<body>
+    <h1>Sorumboard</h1>
+
+    <div class="container">
+        <div class="column pink" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Sprintissä tehtävät työt</h2>
+            <input type="text" id="tehtavalnput" placeholder="Luo uusi tehtävä">
+            <button onclick="lisaaTehtava()">Lisää</button>
+            <div class="task-list" id="sprintti"></div>
+        </div>
+
+        <div class="column orange" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Työn alla</h2>
+            <div class="task-list" id="tyonalla"></div>
+        </div>
+
+         <div class="column blue" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Testauksessa</h2>
+            <div class="task-list" id="testaus"></div>
+        </div>
+
+        <div class="column green" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Valmis</h2>
+            <div class="task-list" id="valmis"></div>
+        </div>
+    </div>
+
+    <script src="projekti_8.js"></script>
+    
+    
+</body>
+</html>
