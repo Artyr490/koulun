@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Kyselylomake</title>
+  <style>
+    label { display: block; margin-top: 10px; }
+  </style>
+  <link rel="stylesheet" href="proekti1B.css">
+  <script src="proekti1B.js" defer></script>
+</head>
+<body>
+
+
+  <form id="kyselylomake" onsubmit="return tarkistaLomake();">
+      <h1 id="otsikko">Kyselylomake</h1>
+  <p id="kuvaus">Täytä alla oleva lomake huolellisesti.</p>
+
+    <label id="nimisyotto" for="nimi">Nimi:</label>
+    <input type="text" id="nimi" name="nimi" minlength="2" required>
+    <small>Syötä koko nimesi.</small>
+
+
+    <label id="emailsyotto" for="email">Sähköposti:</label>
+    <input type="email" id="email" name="email" required>
+    <small>Syötä toimiva sähköpostiosoite.</small>
+
+
+    <label id="ikasyotot" for="ika">Ikä:</label>
+    <input type="number" id="ika" name="ika" min="0" max="120" required>
+    <small>Syötä ikäsi numeroina (0–120).</small>
+
+
+    <label for="pudotus">Valitse aihe:</label>
+    <select id="pudotus" name="aihe">
+      <option value="yleinen">Yleinen palaute</option>
+      <option value="tuki">Tekninen tuki</option>
+      <option value="ehdotus">Ehdotus</option>
+    </select>
+
+
+    <p>Kuinka kuulit meistä?</p>
+    <label><input type="radio" name="lahde" value="netti" required> Internet</label>
+    <label><input type="radio" name="lahde" value="ystava"> Ystävä</label>
+    <label><input type="radio" name="lahde" value="muu"> Muu</label>
+
+
+    <p>Valitse kiinnostuksen kohteesi:</p>
+    <label><input type="checkbox" name="kiinnostus" value="uutiset"> Uutiset</label>
+    <label><input type="checkbox" name="kiinnostus" value="tarjoukset"> Tarjoukset</label>
+    <label><input type="checkbox" name="kiinnostus" value="tapahtumat"> Tapahtumat</label>
+
+
+    <label for="kommentti">Lisäkommentit:</label>
+    <textarea id="kommentti" name="kommentti" rows="4" cols="50"></textarea>
+
+
+    <br><br>
+    <button type="submit" id="laheta">Lähetä</button>
+  </form>
+
+  <script src="proekti1B.js">
+    
+  </script>
+</body>
+</html>
