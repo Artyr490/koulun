@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ota yhteyttä</title>
+    <link rel="stylesheet" href="proekti_1A.css">
+</head>
+<body>
+
+    <div class="kortti">
+    <h1 class="otsikko">Ota yhteyttä</h1>
+
+    <form onsubmit=" return tarkistaLomake()">
+        <label for="nimi">Nimi</label>
+        <input type="text" id="nimi"><br><br>
+
+        <label for="salasana">Salasana:</label>
+        <input type="password" id="salasana"><br><br>
+
+         <input type="hidden" VALUE="Tätä tietoa ei näytetä käyttäjjlle "><br>
+
+        <p>Mikä olet koneenkäyttäjänä?</p>
+        <label><input type="radio" name="kayttaja" value="pelaaja">himopelaaja</label><br>
+        <label><input type="radio" name="kayttaja" value="opiskelu">käytän opiskeluun</label><br>
+        <label><input type="radio" name="kayttaja" value="ei">en käytä konetta</label><br><br>
+
+        <p>Mitä mieltä olet sivustani?</p>
+        <label><input type="checkbox" id="mielipide1">Todella hienot</label><br>
+        <label><input type="checkbox" id="mielipide2">Ammattimaisesti tehty</label><br>
+        <label><input type="checkbox" id="mielipide3">Ostan sinulta</label><br><br>
+
+        <label for="aine">Mikä on lempiaineesi Keudassa:</label>
+        <select name="aine" id="aine">
+            <option value="">Valitse...</option>
+            <option value="matematiikka">Matematiikka</option>
+            <option value="äidinkieli">Äidinkieli</option>
+            <option value="ohjelmointi">Ohjelmointi</option>
+        </select><br><br>
+
+        <label for="palaute">Kerro, miten kehittäisit sivujani:</label><br>
+        <textarea name="palaute" id="palaute" rows="5" cols="30"></textarea><br><br>
+
+        <button type="submit">Lahetä</button>
+
+        <p id="virhe" class="error"></p>
+    </form>
+    </div>
+    <script src="proekti_1A.js"></script>
+    
+</body>
+</html>
