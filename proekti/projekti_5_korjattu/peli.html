@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Muistipeli</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Muistipeli</h1>
+
+    <div class="menu">
+      <label for="pelityyppi">Valitse pelityyppi:</label>
+      <select id="pelityyppi">
+        <option value="4x4">4x4</option>
+        <option value="4x6">4x6</option>
+        <option value="6x6">6x6</option>
+      </select>
+      <button onclick="aloitaPeli()">Aloita uusi peli</button>
+    </div>
+
+    <div class="info">
+      <p>Klikkaukset: <span id="klikkaukset">0</span></p>
+      <p>Aika: <span id="aika">0</span> s</p>
+    </div>
+
+    <div id="pelikentta" class="grid"></div>
+
+    <p id="voitto" class="voitto"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
