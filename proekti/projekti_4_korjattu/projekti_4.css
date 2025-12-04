@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+    background-color: rgb(223, 192, 253);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.kortti {
+    background-color: rgb(182, 123, 237);
+    padding: 20px;
+    width: 600px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin-top: 5px;
+    background-color: rgb(232, 183, 227);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+li.valittu {
+    background-color: green;
+    text-decoration: line-through;
+    color: gray;
+    font-weight: bold;
+}
+
+li.piilotettu {
+    display: none;
+}
+
+.poista {
+    background-color: brown;
+    color: rgb(220, 142, 219);
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
