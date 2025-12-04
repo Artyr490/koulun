@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lomake ja tallennus</title>
+  <link rel="stylesheet" href="projekti_6.css">
+</head>
+<body>
+  <div class="kortti">
+    <h1>Tietojen tallennus</h1>
+    <form onsubmit="tallennaTiedot(); return false;">
+      <input type="text" id="etunimi" placeholder="Etunimi"><br>
+      <input type="text" id="sukunimi" placeholder="Sukunimi"><br>
+      <input type="text" id="osoite" placeholder="Lähiosoite"><br>
+      <input type="text" id="postinumero" placeholder="Postinumero"><br>
+      <input type="text" id="kaupunki" placeholder="Postitoimipaikka"><br>
+      <input type="tel" id="puhelin" placeholder="Puhelin"><br>
+      <input type="email" id="sahkoposti" placeholder="Sähköposti"><br>
+      <button type="submit">Tallenna</button>
+    </form>
+
+    <div id="tulostus"></div>
+  </div>
+
+  <script src="projekti_6.js"></script>
+</body>
+</html>
