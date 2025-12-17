@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yksinkertainen JavaScript tietovisa</title>
+    <link rel="stylesheet" href="tyyli.css">
+</head>
+<body>
+    <div id="sisalto">
+        <header>
+            <h1>Yksinkertainen JavaScript tietovisa</h1>
+            <p>Testa tietosti <strong>JavaScriptistä!</strong></p>
+        </header>
+        <section>
+            <div id="tulokset"></div>
+
+            <form name="kyselyLomake" onsubmit="return tarkistaVastaukset()">
+                <h3>1. Mihin HTML-elementtiin sijoitamme JavaScript-koodiin?</h3>
+                <input type="radio" name="k1" value="a" id="k1a">a. &lt;js&gt;<br>
+                <input type="radio" name="k1" value="b" id="k1b">b. &lt;script&gt;<br>
+                <input type="radio" name="k1" value="c" id="k1c">c. &lt;body&gt;<br>
+                <input type="radio" name="k1" value="d" id="k1d">d. &lt;link&gt;<br>
+
+                <h3>1. Mitä HTML-attribuuttia käytetään viittaamaan ulkoiseen JS-tuiedostoon?</h3>
+                <input type="radio" name="k2" value="a">a. scr<br>
+                <input type="radio" name="k2" value="b">b. link<br>
+                <input type="radio" name="k2" value="c">c. rel<br>
+                <input type="radio" name="k2" value="d">d. href<br>
+
+                <h3>1. Kuinka kirjoitat "Moikka" alert-viestinä</h3>
+                <input type="radio" name="k3" value="a">a. msg("Moikka")<br>
+                <input type="radio" name="k3" value="b">b. alertBox("Moikka")<br>
+                <input type="radio" name="k3" value="c">c. document.write("Moikka")<br>
+                <input type="radio" name="k3" value="d">d. alert("Moikka")<br>
+
+                <h3>JavaScript on suoraan "Java"-ohjelmointikielen sukulainen.</h3>
+                <input type="radio" name="k4" value="a">a. Kyllä<br>
+                <input type="radio" name="k4" value="b">b. Ei<br>
+
+                <h3>1. JavaScript-muuttuja pitää alkaa tietyllä merkillä</h3>
+                <input type="radio" name="k5" value="a">a. @<br>
+                <input type="radio" name="k5" value="b">b. $<br>
+                <input type="radio" name="k5" value="c">c. #<br>
+                <input type="radio" name="k5" value="d">d. Ei tarvitse tiettyä<br>
+
+                <br>
+                <input type="submit" value="Lähetä vastaukset">
+            </form>
+        </section>
+
+        <footer>
+            <p>Copyright &copy; Jyri Lindroos 2019, kaikki oikeudet pidätetään</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
